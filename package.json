@@ -1,0 +1,32 @@
+{
+  "name": "api-aws-s3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavooliveiraf/api-aws-s3.git"
+  },
+  "author": "Gustavo Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavooliveiraf/api-aws-s3/issues"
+  },
+  "homepage": "https://github.com/gustavooliveiraf/api-aws-s3#readme",
+  "dependencies": {
+    "aws-sdk": "^2.573.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.4"
+  }
+}
