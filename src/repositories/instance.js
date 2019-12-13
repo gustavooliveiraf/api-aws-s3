@@ -1,5 +1,5 @@
 const aws = require('aws-sdk');
-const { bucketName } = require('./index');
+const { Bucket } = require('../../config');
 
 aws.config.setPromisesDependency();
 aws.config.update({
@@ -9,11 +9,7 @@ aws.config.update({
 
 const s3 = new aws.S3();
 
-const paramsDefault = {
-  Bucket: bucketName,
-};
-
 module.exports = {
   s3,
-  paramsDefault,
+  Bucket,
 };
