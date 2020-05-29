@@ -1,7 +1,7 @@
-const statusRouter = require('./status');
+const healthRouter = require('./health');
 const storageRouter = require('./storage');
 
 module.exports = (app) => {
-  app.use(statusRouter);
+  app.use(healthRouter);
   app.use(storageRouter);
 };
